@@ -11,7 +11,7 @@ The models are the engine. You don't need to know which model is being applied.
 One command. Copy-paste this into your terminal:
 
 ```bash
-pip install mental-models-mcp && claude mcp add --transport stdio mental-models -- python -m mental_models_mcp
+pip install git+https://github.com/0xMelch/theiamentalmodels.git && claude mcp add --transport stdio mental-models -- python -m mental_models_mcp
 ```
 
 Restart Claude Code. That's it — 700 mental models are now available in every session.
