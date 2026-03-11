@@ -1,0 +1,29 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "mental-models-mcp"
+version = "0.1.0"
+description = "MCP server providing 700 mental models for decision-making"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.10"
+dependencies = [
+    "mcp>=1.0.0",
+    "numpy>=1.24.0",
+    "onnxruntime>=1.16.0",
+]
+
+[project.optional-dependencies]
+build = [
+    "sentence-transformers>=2.2.0",
+    "torch>=2.0.0",
+]
+dev = [
+    "pytest>=7.0.0",
+    "pytest-asyncio>=0.21.0",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/mental_models_mcp"]
