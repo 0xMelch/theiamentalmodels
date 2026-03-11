@@ -6,15 +6,22 @@ An MCP server that exposes 700 mental models as a decision-coaching tool. Descri
 
 The models are the engine. You don't need to know which model is being applied.
 
-## Install
+## Quick Start
+
+One command. Copy-paste this into your terminal:
 
 ```bash
-pip install mental-models-mcp
+pip install mental-models-mcp && claude mcp add --transport stdio mental-models -- python -m mental_models_mcp
 ```
 
-### Claude Desktop Configuration
+Restart Claude Code. That's it — 700 mental models are now available in every session.
 
-Add to your `claude_desktop_config.json`:
+### Claude Desktop (GUI)
+
+If you're using Claude Desktop instead of Claude Code, add this to your `claude_desktop_config.json`:
+
+- macOS: `~/Library/Application Support/Claude/claude_desktop_config.json`
+- Windows: `%APPDATA%\Claude\claude_desktop_config.json`
 
 ```json
 {
@@ -26,6 +33,8 @@ Add to your `claude_desktop_config.json`:
   }
 }
 ```
+
+Restart Claude Desktop to pick up the new server.
 
 ## Tools
 
