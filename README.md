@@ -1,5 +1,7 @@
 # Mental Models MCP Server
 
+Built by [Theia](https://theia.investments) — an investment fund building on the Internet Financial System.
+
 An MCP server that exposes 700 mental models as a decision-coaching tool. Describe a situation — deal, negotiation, resource allocation, investment — and the server surfaces relevant mental models, asks sharpening questions, and provides structured analysis.
 
 The models are the engine. You don't need to know which model is being applied.
@@ -75,16 +77,16 @@ Returns all disciplines with model counts and chapter breakdowns. No input neede
 
 The 700 models span 10 disciplines:
 
-- Behavioral Economics
-- Biology
-- Economics
-- Elementary Models
-- Financial Theory
-- Game Theory
-- Investing
-- Philosophy
-- Physics
-- Probability
+- Algorithms & Machine Learning (83)
+- Behavioral Economics (86)
+- Economics (77)
+- Elementary Models (54)
+- Financial Theory (62)
+- Game Theory (40)
+- Investing (94)
+- Mathematics (58)
+- Philosophy (49)
+- Probability (97)
 
 ## Development
 
@@ -131,6 +133,14 @@ src/mental_models_mcp/
     ├── models_parsed.json       # Parsed structured format
     └── embeddings.npz           # Pre-computed embeddings
 ```
+
+## About Theia
+
+This project is maintained by [Theia](https://theia.investments), an investment fund whose thesis is premised on the Internet Financial System — a better financial system on the cloud that can hold the world's assets and provide financial services to 8 billion people. Theia believes the Internet Financial System is a paradigm shift in global financial activity, enabling the free flow of capital across borders, stronger property rights for 5 billion people, and a Cambrian explosion in financial innovation through smart contracts and permissionless infrastructure.
+
+The 700 mental models in this library span disciplines from Game Theory and Behavioral Economics to Probability and Financial Theory — the same frameworks Theia uses to evaluate deals, allocate capital, and stress-test investment theses.
+
+Learn more at [theia.investments](https://theia.investments).
 
 ## License
 
